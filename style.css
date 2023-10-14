@@ -8,7 +8,7 @@
   --grayish-blue: hsl(220, 15%, 55%);
   --dark-blue: hsl(218, 44%, 22%);
   --font: "Outfit";
-  --font-size: 1.1rem;
+  --font-size: 1.2rem;
 }
 
 * {
@@ -32,9 +32,10 @@ body {
 }
 .card {
   width: 320px;
-  height: 500px;
+  height: max-content;
   background-color: var(--white);
   padding: 16px;
+
   border-radius: 1rem;
   box-shadow: 0px 0px 0.8px -12px rgba(0, 0, 0, 0.02),
     0px 0px 3.5px -12px rgba(0, 0, 0, 0.028),
@@ -50,18 +51,18 @@ body {
 .card-footer .card-footer-title,
 .card-footer .card-footer-subtile {
   color: var(--dark-blue);
-  font-size: var(--font-size);
+  /* font-size: var(--font-size); */
   text-align: center;
   margin: 1.1rem auto;
 }
 .card-footer .card-footer-subtile {
   text-align: center;
-  font-size: 1rem;
   color: var(--grayish-blue);
+  font-size: 1rem;
 }
 .card-footer .card-footer-title {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: var(--font-size);
 }
 .attribution {
   z-index: 9999;
